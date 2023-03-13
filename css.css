@@ -1,0 +1,437 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+.nav_bar
+{
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    z-index: 20;
+}
+.nav_bar  a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav_bar .nav_links ul
+{
+    display: flex;
+} 
+.nav_bar .nav_links ul li
+{
+    margin: 0 25px;
+} 
+.nav_bar .nav_links ul li.active a
+{
+    color: rgb(164,78,82);
+
+
+} 
+.nav_bar .nav_links ul li a:hover
+{
+    color: rgb(164,78,82);
+    transition: color 0.2s ease-in-out;
+} 
+.nav_bar .menu_hamberger
+{
+    display: none;
+    width: 7%;
+    position: absolute;
+    top: 20px;
+    right: 13%;
+
+}
+.hero
+{
+    width: 55%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.hero h1
+{
+    font-size: 3em;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.hero p
+{
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.hero span
+{
+    margin-left: 3px;
+    display: flex;
+    font-weight: 900;
+    text-shadow: 50px;
+    text-align: center;
+}
+.banniere
+{
+    height: 100vh;
+}
+.banniere .fond
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13), transparent),
+    radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent)
+}
+.le_dessin
+{
+    width: 100%;
+    height: 100%;
+
+}
+.a_propos
+{
+    background-color: rgb(164,78,82);
+    display: flex;
+    position: relative;
+    z-index: 0;
+    padding-top: 12%;
+    padding-bottom: 6%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.a_propos .text_moi
+{ 
+    position: absolute;
+    margin-left: 7%;
+    width: 30%;
+    margin-top: 4%;
+    background-color: white;
+    z-index: 2;
+    padding: 50px;
+    padding-bottom: 18%;
+}
+.a_propos .a_porpos_image
+{
+    margin-left: 45%;
+    z-index: 1;
+    right: 0;
+    width: 50%;
+}
+.a_propos img
+{
+    width: 75%;
+    height: 100%;
+}
+
+
+.a_propos .text_moi h1
+{
+    color: rgb(164,78,82);
+    text-shadow: 1px 1px 0px black;
+    font-size: 5em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 6%;
+}
+.a_propos .text_moi p
+{
+    font-size: 2.8em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 6%;
+}
+.a_propos .text_moi span
+{
+    font-size: 1.6em;
+
+
+}
+.a_propos .text_moi a
+{
+    display: flex;
+    position: absolute;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: rgb(164,78,82);
+    padding: 8px 20px;
+    border: 2px solid rgb(164,78,82);
+    border-radius: 5px;
+    margin-top: 30%;
+}
+.a_propos .text_moi a:hover
+{
+    transition: all 0.3s ease-in;
+    background-color: rgb(164,78,82); 
+    color: white;
+    box-shadow: 2px 2px 0px black;
+}
+.experience
+{
+    justify-content: center;
+    text-align: center;
+}
+.experience h1
+{
+    margin-top: 3%;
+    color: rgb(185, 74, 80);
+    font-size: 4em;
+    font-weight: 780;
+}
+.experience .sacs img
+{
+    width: 5%;
+    height: auto;
+    padding: 3%;
+}
+.experience .date
+{
+    font-size: 1.75em;
+}
+.experience .date i
+{
+    margin-right: 1%;
+}
+.experience .stage1 h2
+{
+    padding: 1%;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.experience .stage2 h2
+{
+    color: rgb(164,78,82);
+    padding: 1%;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.experience .texte
+{
+    font-size: 1.9em;
+    font-weight: 400;
+    margin-bottom: 1%;
+}
+.experience .description
+{
+    width: 40%;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    justify-items: center;
+    margin-left: 25%;
+
+}
+.experience .stage1 .description p
+{
+    text-align:start;
+    margin-left: 40%;
+    font-size: 1.5em;
+    margin-top: 3%;
+}
+.experience .stage2 .description p
+{
+    text-align:start;
+    margin-left: 40%;
+    font-size: 1.5em;
+    margin-top: 3%;
+}
+.experience .description p i
+{
+
+    font-size: 0.5em;
+    margin-right: 1.5%;
+}
+.formation
+{
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(164,78,82);
+
+}
+.formation h1
+{
+    margin-top: 3%;
+    padding-top:3%;
+    font-size: 4em;
+    font-weight: 780;
+}
+.formation .sacs img
+{
+    width: 5%;
+    height: auto;
+    padding: 3%;
+    
+}
+.formation .date
+{
+    font-size: 1.75em;
+    color: white;
+}
+.formation .date i
+{
+    margin-right: 1%;
+    color: white;
+}
+.formation .formation1 h2
+{
+    padding: 1%;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: white;
+}
+.formation .texte
+{
+    font-size: 1.9em;
+    font-weight: 400;
+    margin-bottom: 1%;
+    color: white;
+    padding-bottom: 3%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px) { 
+
+   .nav_bar .menu_hamberger
+    {
+        display: block;
+    }
+
+    .nav_links{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.20);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(7px);
+        margin-right: -100%;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav_links.mobile_menu
+    {
+    margin-right: 0;
+    }
+    .nav_links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .nav_links ul li
+    {
+        padding: 25px 0;
+        font-size: 1.5em;
+    }
+
+    .nav_links ul li a
+    {
+        color: black;
+        font-weight: bold;
+    }
+
+}
+@media screen and (max-width: 680px) {
+    .hero h1
+    {
+        font-size: 1.5em;
+        font-weight: bolder;
+        margin-bottom: 10px;
+    } 
+}
+
+@media screen and (max-width: 1550px) {
+    .a_porpos_image
+    {
+        display: none;
+        width: 60%;
+    }
+    .a_propos .text_moi
+    {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+ 
+    }
+    .a_propos .text_moi h1
+    {
+
+        font-size: 3em;
+        margin-bottom: 10px;
+        padding-bottom: 3%;
+    }
+    .a_propos .text_moi p
+    {
+        font-size: 2.5em;
+
+        margin-bottom: 10px;
+        padding-bottom: 3%;
+    }
+    .a_propos .text_moi span
+    {
+        font-size: 2em;
+    }
+    .a_propos .text_moi a
+    {
+        margin-top: 6%; 
+    }
+    
+}
+@media screen and (max-width: 460px) {
+    .a_propos .text_moi h1
+    {
+
+        font-size: 3em;
+        margin-bottom: 10px;
+        padding-bottom: 3%;
+    }
+    .a_propos .text_moi p
+    {
+        font-size: 2em;
+
+        margin-bottom: 10px;
+        padding-bottom: 3%;
+    }
+    .a_propos .text_moi span
+    {
+        font-size: 1.5em;
+    }
+    .a_propos .text_moi a
+    {
+        margin-top: 6%; 
+        position: relative;
+    }
+    }
+
+
