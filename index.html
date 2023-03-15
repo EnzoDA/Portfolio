@@ -15,10 +15,19 @@
  
      <div class="nav_links">
          <ul>
-             <li class="active"><a href="#banniere">Accueil</a></li>
+             <li><a href="#banniere">Accueil</a></li>
              <li><a href="#a_propos">Qui suis-je?</a></li>
              <li><a href="#experience">Expérience</a></li>
-             <li><a href="home.html">Autre</a></li>
+             <div class="dropmenu">
+             <li><a href="#">Autre</a></li>
+            <div class="content">
+                <a href="#formation">Diplôme</a>
+                <a href="#projet">Projet</a>
+                <a href="#veille">Veille</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            </div>
          </ul>
      </div>
      <img class="menu_hamberger" src="images/logo-hamberger.png" alt="menu hamberger">
@@ -137,8 +146,24 @@
     </div>
 </section>
 
+<section class="projet">
+    <h1>Projet</h1>
+    <div></div>
 
+</section>
 
+<section class="veille">
+    <h1>Veille Technologique</h1>
+    <h2>Qu'est-ce que la veille technologique ?</h2>
+    <p>La veille technologique, élément de la veille stratégique, consiste à surveiller les évolutions techniques, les innovations dans un secteur d’activité donnée. La veille technologique comprend notamment la surveillance, la collecte, le partage et la diffusion d’information permettant d’anticiper ou de s’informer sur des changements en matière de recherche, développement, brevet, lancement de nouveaux produits, matériaux, processus, concepts, innovation de fabrication, etc…. Cela a pour but d’évaluer l’impact sur l’environnement et l’organisation.  </p>
+    <p> Ma veille technologique porte sur le DLSS, je tire "pull" mes informations depuis google , twitter et bien d'autre site de renseignement sur le DLSS de NVIDIA. J'ai mis en place des alertes google pour recevoir automatiquement les nouveautés et les mise a jour sur le DLSS "push".</p>
+</section>
+
+<section class="contact">
+    <h1>Contactez-moi</h1>
+    <h2>enzodasilvaribeiro@gmail.com</h2>
+    <h2>0608172136</h2>
+</section>
 <script>
     const menuHamburger = document.querySelector(".menu_hamberger")
     const navLinks = document.querySelector(".nav_links")
