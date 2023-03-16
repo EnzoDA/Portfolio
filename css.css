@@ -112,7 +112,7 @@
 {
     font-size: 3em;
     font-weight: bolder;
-    margin-bottom: 10px;
+    margin-top: 10px;
     text-align: center;
 }
 .hero p
@@ -121,8 +121,10 @@
     display: flex;
     font-size: 1.5em;
     font-weight: 400;
-    margin-bottom: 20px;
+    
 }
+
+
 .hero span
 {
     margin-left: 3px;
@@ -349,8 +351,25 @@
     color: white;
     padding-bottom: 3%;
 }
-
-
+.projet
+{
+    text-align: center;
+    justify-content: center;
+}
+.projet .grid
+{
+    display: grid;
+    background-color: red;
+    margin: 2%;
+    grid-template-areas: "a a a a";
+    grid-gap: 10px;
+    grid-auto-columns: auto;
+        -webkit-animation: 3s;
+}
+.projet .grid div
+{
+    margin: 2%;
+}
 
 
 
