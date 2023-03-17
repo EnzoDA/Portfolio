@@ -52,7 +52,7 @@
     width: 7%;
     position: absolute;
     top: 20px;
-    right: 30vw;
+    right: 5px;
 
 }
 .nav_bar .nav_links .dropmenu
@@ -63,7 +63,7 @@
 .nav_bar .nav_links .dropmenu .content
 {
     position: absolute;
-    background-color: rgba(3, 3, 3, 0.692);
+    background-color: rgba(3, 3, 3, 0.767);
     box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
     z-index: -1;
     opacity: 0;
@@ -237,6 +237,8 @@
 }
 .experience h1
 {
+    padding-top: 6%;
+    padding-bottom: 3%;
     margin-top: 3%;
     color: rgb(185, 74, 80);
     font-size: 4em;
@@ -314,8 +316,9 @@
 }
 .formation h1
 {
+    padding-top: 6%;
+    padding-bottom: 3%;
     margin-top: 3%;
-    padding-top:3%;
     font-size: 4em;
     font-weight: 780;
 }
@@ -351,26 +354,93 @@
     color: white;
     padding-bottom: 3%;
 }
-.projet
+.projet 
 {
     text-align: center;
     justify-content: center;
 }
+.projet h3
+{
+    margin-top: 3%;
+    color: rgb(185, 74, 80);
+    font-size: 4em;
+    font-weight: 780;
+}
+
 .projet .grid
 {
     display: grid;
-    background-color: red;
     margin: 2%;
     grid-template-areas: "a a a a";
-    grid-gap: 10px;
+    grid-gap: 1vw;
     grid-auto-columns: auto;
-        -webkit-animation: 3s;
+
 }
-.projet .grid div
+.projet .grid .item
 {
     margin: 2%;
+    background-color: rgb(219, 219, 214);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2%;
+    box-shadow: 2px 2px 0px black;
 }
-
+.projet .grid .item:hover
+{
+    transition: all 0.4s linear;
+    background-color: rgb(164,78,82); 
+    color: white;
+    box-shadow: 7px 4px 2px black;
+}
+.grid .item .img_item
+{
+    padding: 1%;
+    margin: 2%;
+}
+.grid .item .img_item img
+{
+    width: 8vw;
+    height: auto;
+    border-radius: 4px;
+}
+.grid .item .sous_item
+{
+    padding: 1%;
+    margin: 2%;
+}
+.grid .item .sous_item h1
+{
+    font-size: 2.2em;
+    font-weight: 725;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0) ;
+    padding-bottom: 2%;
+}
+.grid .item .sous_item span
+{
+    font-size: 1.3em;
+    font-weight: 500;
+    padding:2%;
+}
+.grid .item  a
+{
+    background-color: rgba(158, 157, 157, 0.849);
+    text-decoration: none;
+    font-size:1.5em;
+    border-radius:2px  ;
+    box-shadow: 1px 2px 2px black;
+    padding: 1.3% 15%;
+    color: black;
+}
+.grid .item  a:hover
+{
+    background-color: rgb(187, 187, 187);
+    text-decoration: none;
+    font-size:1.5em;
+    border-radius:5px  ;
+    box-shadow: 8px 4px 4px black;
+    transition: all 0.3s linear;
+    color: rgb(240, 240, 240);
+}
 
 
 
