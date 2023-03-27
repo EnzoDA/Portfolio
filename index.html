@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
     <link rel="stylesheet" href="css.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <title>Portfolio | Da Silva Ribeiro Enzo</title>
@@ -11,7 +12,7 @@
 <header>
     <nav class="nav_bar">
 
-        <a href="home.html"> <img class="logo" src="images/logo.png"  alt="le logo"></a>
+        <a href="#banniere"> <img class="logo" src="images/logo.png"  alt="le logo"></a>
  
      <div class="nav_links">
          <ul>
@@ -19,7 +20,7 @@
              <li><a href="#a_propos">Qui suis-je?</a></li>
              <li><a href="#experience">Expérience</a></li>
              <div class="dropmenu">
-             <li><a href="#">Autre</a></li>
+             <li><a>Autre</a></li>
             <div class="content">
                 <a href="#formation">Diplôme</a>
                 <a href="#projet">Projet</a>
@@ -38,7 +39,7 @@
         <canvas class="le_dessin">
         </canvas>
     </div>
-    <div class="hero">
+    <div disabled="true" class="hero">
         <p>Je suis <span
             class="txt-rotate"
             data-period=""
@@ -152,37 +153,25 @@
         <div class="item">
             <div class="img_item"><img src="images/logo.png" alt="logo"></div>
             <div class="sous_item">
-                <h1>Le Titre du projet</h1>
-                <span>Description du projet en quelque ligne</span>
+                <h1>Portfolio</h1>
+                <p>La création de mon portfolio </p>
             </div>
-            <a href="">Lien du projet</a>
 
         </div>
         <div class="item">
             <div class="img_item"><img src="images/logo.png" alt="logo"></div>
             <div class="sous_item">
-                <h1>Le Titre du projet</h1>
-                <span>Description du projet en quelque ligne</span>
+                <h1>Portfolio</h1>
+                <p>La création de mon portfolio </p>
             </div>
-            <a href="">Lien du projet</a>
 
         </div>
         <div class="item">
             <div class="img_item"><img src="images/logo.png" alt="logo"></div>
             <div class="sous_item">
-                <h1>Le Titre du projet</h1>
-                <span>Description du projet en quelque ligne</span>
+                <h1>Portfolio</h1>
+                <p>La création de mon portfolio </p>
             </div>
-            <a href="">Lien du projet</a>
-
-        </div>
-        <div class="item">
-            <div class="img_item"><img src="images/logo.png" alt="logo"></div>
-            <div class="sous_item">
-                <h1>Le Titre du projet</h1>
-                <span>Description du projet en quelque ligne</span>
-            </div>
-            <a href="">Lien du projet</a>
 
         </div>
     </div>
@@ -201,6 +190,15 @@
     <h2>enzodasilvaribeiro@gmail.com</h2>
     <h2>0608172136</h2>
 </section>
+
+
+
+<button id="scroll_top_button" onclick="scrollToTop()"class="scroll_top_button" 
+    type="button">
+    <span class="material-symbols-outlined">
+        arrow_upward
+    </span>
+</button>
 <script>
     const menuHamburger = document.querySelector(".menu_hamberger")
     const navLinks = document.querySelector(".nav_links")

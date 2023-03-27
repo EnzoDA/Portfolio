@@ -54,3 +54,19 @@ var TxtRotate = function(el, toRotate, period) {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   };
+
+  const scrollTopButton =
+  document.querySelector("#scroll_top_button");
+
+  const onScroll = (event) =>{
+    const scrollPosition =
+    event.target.scrollingElement.scrollTop;
+
+    scrollTopButton.classList.toggle("visible", scrollPosition > 0);
+  };
+  const scrollToTop=()=>{
+    window.scrollTo({
+      top: 0, behavior:"smooth"
+    });
+  };
+  document.addEventListener("scroll", onScroll);
