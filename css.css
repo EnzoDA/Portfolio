@@ -180,7 +180,7 @@
     background-color: white;
     z-index: 2;
     padding: 50px;
-    padding-bottom: 18%;
+    padding-bottom: 8%;
 }
 .a_propos .a_porpos_image
 {
@@ -219,14 +219,13 @@
 .a_propos .text_moi .cv_page
 {
     display: flex;
-    position: absolute;
     font-size: 1.6em;
     font-weight: 600;
     color: rgb(164,78,82);
     padding: 8px 20px;
     border: 2px solid rgb(164,78,82);
     border-radius: 5px;
-    margin-top: 30%;
+    text-align: center;
 }
 .a_propos .text_moi .cv_page:hover
 {
@@ -240,11 +239,17 @@
     display: flex;
     font-size: 1.6em;
     color: rgb(164,78,82);
-    padding: 1px 1px;
+    padding: 2px 2px;
     border: 2px solid rgb(164,78,82);
     border-radius: 15px;
-    margin-top: 30%;
-    margin-left: 50%;
+    place-items: center;
+}
+.a_propos .text_moi .cv
+{
+    display: flex;
+    border-radius: 15px;
+    margin-top: 20%;
+    gap: 2%;
 }
 
 /*EXPERIENCE*/
@@ -467,6 +472,126 @@
 }
 
 
+/*VEILLE TECHNO*/
+
+
+.veille
+{
+
+    background-color: #f6f6f6;
+    padding-bottom: 3%;
+}
+.veille_texte
+{
+    width: 60%;
+    margin-left: 18%;
+    padding: 1% 1% ;
+}
+.veille_texte h1
+{
+    font-size: 4em;
+    font-weight: 780;
+    color: rgb(185, 74, 80);
+    padding-top: 8%;
+}
+.veille_texte h2
+{
+    font-size: 2.4em;
+    font-weight: 700;
+    padding-top: 4%;
+}
+.veille_texte p
+{
+    font-size: 1.4em;
+    text-align: justify;
+    padding-top: 2%;
+    font-weight: 500;
+}
+
+
+/*CONTACTER*/
+
+.contact iframe
+{
+    padding-top: 5%;
+    background-color: #f6f6f6;
+    position: absolute;
+}
+.contact .contact_block
+{
+    position: absolute;
+    background-color: #ffffff;
+    width: 25%;
+    margin-top: 7%;
+    right: 4%;
+    padding-bottom: 1%;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 4px 4px 0px #ccc;
+}
+.contact .contact_block h1
+{
+    font-size: 3em;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    padding-top: 4%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    
+}
+.contact .contact_block form
+{
+    padding: 2%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    place-items: center;
+    display: grid;
+    
+}
+.contact .contact_block form input,textarea
+{
+    display: grid;
+    padding: 2%;
+    border: transparent;
+    border-bottom: 2px solid #ccc;
+    width: 80%;
+    font-size: 1.2em;
+    border-radius: 10px ;
+    box-shadow: #ccc 0px 1px 1px, #ccc 0px 1px 1px 2px, #ccc 1px -1px 0px inset;
+    resize: none;
+}
+.contact .contact_block form label
+{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-right: 65%;
+    font-size: 1.2em;
+}
+.contact .contact_block form button
+{
+    padding: 3% 20%;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(185, 74, 79, 0.836); 
+    margin-top: 10%;
+}
+.contact .contact_block form button:hover
+{
+    background-color: rgb(185, 74, 79); 
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 1px rgb(185, 74, 79);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*BUTTON POUR RMONTER*/
 
 .scroll_top_button
 {
@@ -595,6 +720,12 @@
     {
         width: 8%;
     }
+        .contact .contact_block form label
+    {
+
+        font-size: 1em;    
+        margin-right: 100%;
+    }
 }
 @media screen and (max-width: 680px) {
     .hero h1
@@ -653,6 +784,14 @@
     {
         width: 10vw;
         height: 10vw;
+    }
+    .a_propos .text_moi .cv_dl
+    {
+        font-size: 1.4em;
+    }
+    .a_propos .text_moi .cv_page
+    {
+        font-size: 1.4em;
     }
 }
 
@@ -738,6 +877,10 @@
     {
         font-size: 17px;
     }
+        .a_propos .text_moi .cv_dl
+    {
+        margin-top: 6%;
+    }
     
 }
 @media screen and (max-width: 460px) {
@@ -762,7 +905,8 @@
     .a_propos .text_moi .cv_page
     {
         margin-top: 6%; 
-        position: relative;
+        font-size: 1.3em;
+        margin-right: 2%;
     }
     .projet .grid
     {

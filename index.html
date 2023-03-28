@@ -54,10 +54,12 @@
         <p>Qui Suis-Je ?</p>
         <span>Je suis Enzo DA SILVA RIBEIRO, étudiant en BTS SIO (Services Informatiques aux Organisations), Option SLAM (Solutions Logicielles et Application Métier) l'option spécialisée pour le développement, au lycée Lycée Pasteur Mont Roland (39100).
             Actuellement diplômé du BAC Pro SN (Système Numérique ).Mon projet professionnel est de devenir Webmaster / Web développeur (concepteur de site internet), après mes 2 ans d'études en BTS SIO et de devenir auto-entrepreneur.</span>
+            <div class="cv">
             <a class="cv_page" href="CV.pdf" target="_blank">Retrouvez mon CV ici !</a>
             <a class="cv_dl" href="CV.pdf" download="CV.pdf" alt="Telécharger mon CV"><span class="material-symbols-outlined">
                 arrow_downward
             </span></a>
+            </div>
     </div>
     <div class="a_porpos_image">
         <img src="images/moi.jpg" alt="photos de moi">
@@ -182,16 +184,41 @@
 </section>
 
 <section id="veille" class="veille">
+    <div class="veille_texte">
     <h1>Veille Technologique</h1>
     <h2>Qu'est-ce que la veille technologique ?</h2>
-    <p>La veille technologique, élément de la veille stratégique, consiste à surveiller les évolutions techniques, les innovations dans un secteur d’activité donnée. La veille technologique comprend notamment la surveillance, la collecte, le partage et la diffusion d’information permettant d’anticiper ou de s’informer sur des changements en matière de recherche, développement, brevet, lancement de nouveaux produits, matériaux, processus, concepts, innovation de fabrication, etc…. Cela a pour but d’évaluer l’impact sur l’environnement et l’organisation.  </p>
-    <p> Ma veille technologique porte sur le DLSS, je tire "pull" mes informations depuis google , twitter et bien d'autre site de renseignement sur le DLSS de NVIDIA. J'ai mis en place des alertes google pour recevoir automatiquement les nouveautés et les mise a jour sur le DLSS "push".</p>
+    <p>La veille technologique, élément de la veille stratégique, consiste à surveiller les évolutions techniques, les innovations dans un secteur 
+        d’activité donnée. La veille technologique comprend notamment la surveillance, la collecte, le partage et la diffusion d’information permettant
+        d’anticiper ou de s’informer sur des changements en matière de recherche, développement, brevet, lancement de nouveaux produits, matériaux, processus, 
+        concepts, innovation de fabrication, etc…. Cela a pour but d’évaluer l’impact sur l’environnement et l’organisation.
+        </p>
+        <p>
+        Ma veille technologique porte sur le DLSS, je tire "pull" mes informations depuis google , twitter et bien d'autre site de renseignement sur le DLSS de NVIDIA. 
+        J'ai mis en place des alertes google pour recevoir automatiquement les nouveautés et les mise a jour sur le DLSS "push".
+    </p>
+    </div>
 </section>
 
 <section id="contact" class="contact">
-    <h1>Contactez-moi</h1>
-    <h2></h2>
-    <h2>0608172136</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21654.00665192122!2d5.256647262534002!3d47.280125118314366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f2a6fa033ff421%3A0xfc4fde9422f7b55f!2s13%20La%20Fontaine%20du%20Grand%20Pre%2C%2021110%20Chambeire!5e0!3m2!1sfr!2sfr!4v1680025699505!5m2!1sfr!2sfr" width="100%" height="900" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="contact_block">
+        <h1>Contacter moi !</h1>
+        <form action="contact">
+            <label for="email">Nom :</label>
+            <input type="text" name="nom" placeholder="Votre nom">
+            <label for="email">Email :</label>
+            <input type="text" name="email" placeholder="exemple@exemple.com\.fr">
+            <label for="sujet">Objet :</label>
+            <input type="text" name="objet" placeholder="Votre objet" >
+            <label for="description">Déscription :</label>
+            <textarea name="description" name="description" id="description" cols="100" rows="5" placeholder="Votre description"></textarea>
+            <label for="capchat">Capchat :</label>
+            <input type="text" placeholder="Votre capchat">
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+    </div>
 </section>
 
 
