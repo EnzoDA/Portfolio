@@ -216,7 +216,7 @@
 
 
 }
-.a_propos .text_moi a
+.a_propos .text_moi .cv_page
 {
     display: flex;
     position: absolute;
@@ -228,12 +228,23 @@
     border-radius: 5px;
     margin-top: 30%;
 }
-.a_propos .text_moi a:hover
+.a_propos .text_moi .cv_page:hover
 {
     transition: all 0.3s ease-in;
     background-color: rgb(164,78,82); 
     color: white;
     box-shadow: 2px 2px 0px black;
+}
+.a_propos .text_moi .cv_dl
+{
+    display: flex;
+    font-size: 1.6em;
+    color: rgb(164,78,82);
+    padding: 1px 1px;
+    border: 2px solid rgb(164,78,82);
+    border-radius: 15px;
+    margin-top: 30%;
+    margin-left: 50%;
 }
 
 /*EXPERIENCE*/
@@ -677,7 +688,7 @@
     {
         font-size: 1.6em;
     }
-    .a_propos .text_moi a
+    .a_propos .text_moi .cv_page
     {
         margin-top: 6%; 
     }
@@ -748,7 +759,7 @@
     {
         font-size: 1.5em;
     }
-    .a_propos .text_moi a
+    .a_propos .text_moi .cv_page
     {
         margin-top: 6%; 
         position: relative;
