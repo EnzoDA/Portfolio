@@ -99,8 +99,8 @@
 
 .hero
 {
-    width: 35%;
-    height: 40%;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,16 +145,16 @@
 {
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: black;
     background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13), transparent),
     radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent)
 }
 .le_dessin
 {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 
 }
 
@@ -258,6 +258,7 @@
 {
     justify-content: center;
     text-align: center;
+    justify-items: center;
 }
 .experience h1
 {
@@ -503,7 +504,6 @@
 .veille_texte p
 {
     font-size: 1.4em;
-    text-align: justify;
     padding-top: 2%;
     font-weight: 500;
 }
@@ -616,6 +616,142 @@
     opacity: 1;
     visibility: visible;
 }
+
+
+/*MEDIA QUERIE*/
+
+@media screen and (max-width: 1550px) {
+    .nav_bar 
+    {
+       font-size: 1em;
+    }
+    .nav_bar  a
+    {
+        font-size: 17px;
+    }
+    .a_porpos_image
+    {
+        display: none;
+        width: 60%;
+    }
+    .a_propos .text_moi
+    {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2%;
+        margin-right: 2%;
+ 
+    }
+    .a_propos .text_moi h1
+    {
+
+        font-size: 2em;
+        margin-bottom: 10px;
+        padding-bottom: 3%;
+    }
+    .a_propos .text_moi p
+    {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        padding-bottom: 3%;
+    }
+    .a_propos .text_moi span
+    {
+        font-size: 1.3em;
+    }
+    .a_propos .text_moi .cv
+    {
+        margin-top: 4%; 
+    }
+    .a_propos .text_moi .cv_page
+    {
+        margin-top: 6%; 
+        font-size: 1.3em;
+    }
+    .a_propos .text_moi .cv_dl
+    {
+        margin-top: 6%;
+        font-size: 1.7em;
+    }
+    .experience .sacs img
+    {
+        width: 4%;
+    }
+    .experience h1
+    {
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .experience .stage2 .date
+    {
+        font-size: 1.3em;
+    }
+    .experience .stage1 .date
+    {
+        font-size: 1.3em;
+    }
+    .experience .stage2 h2
+    {
+        font-size: 1.8em;
+    }
+    .experience .stage1 h2
+    {
+        font-size: 1.8em;
+    }
+    .experience .texte
+    {
+        font-size: 1.3em;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .experience .description
+    {
+        font-size: 0.6em;
+    }
+    .formation h1
+    {
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .formation .date
+    {
+        font-size: 1.3em;
+    }
+    .formation .formation1 h2
+    {
+        font-size: 1.8em;
+    }
+    .formation .texte
+    {
+        font-size: 1.3em;
+    }
+    .projet h3
+    {
+        font-size: 2em;
+    }
+    .projet .grid .item .sous_item h1
+    {
+        font-size: 2em;
+    }
+    .projet .grid .item .sous_item p
+    {
+        font-size: 1.25em;
+    }
+    .veille .veille_texte h1
+    {
+        font-size: 2em;
+    }
+    .veille .veille_texte h2
+    {
+        font-size: 1.8em;
+    }
+    .veille .veille_texte p
+    {
+        font-size: 1.3em;
+    }
+}
 @media screen and (max-width: 900px) { 
 
    .nav_bar .menu_hamberger
@@ -672,49 +808,78 @@
         color: black;
         font-weight: bold;
     }
-    .experience h1
+    .banniere .hero p
     {
-        font-size: 2em;
+        font-size: 1.2em;
     }
-    .experience .date
-    {
-        font-size: 0.8em;
-    }
-    .experience h2
+    .banniere .hero h1
     {
         font-size: 1.8em;
+        margin-top: 1%;
+        margin-bottom: 1%;
     }
-    .experience .texte
+    .a_propos .text_moi h1
     {
-        font-size: 0.5em;
+
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        padding-bottom: 3%;
     }
-    .experience .description p
+    .a_propos .text_moi .cv_dl
     {
-        font-size: 0.4em;
+        font-size: 1.4em;
+    }
+    .a_propos .text_moi .cv_page
+    {
+        font-size: 1.3em;
     }
     .experience .sacs img
     {
         width: 8%;
     }
+    .experience h1
+    {
+        font-size: 1.8em;
+    }
+    .experience .stage1 .date
+    {
+        font-size: 1.2em;
+    }
+    .experience .stage2 .date
+    {
+        font-size: 1.2em;
+    }
+    .experience .stage2 h2
+    {
+        font-size: 1.8em;
+    }
+    .experience .stage1 h2
+    {
+        font-size: 1.8em;
+    }
+    .experience .texte
+    {
+        font-size: 1.3em;
+    }
+    .experience .description 
+    {
+        font-size: 0.6em;
+    }
     .formation h1
     {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .formation .date
     {
-        font-size: 0.8em;
+        font-size: 1.2em;
     }
     .formation h2
     {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .formation .texte
     {
-        font-size: 0.5em;
-    }
-    .formation .description
-    {
-        font-size: 0.6em;
+        font-size: 1.3em;
     }
     .formation .sacs img
     {
@@ -726,34 +891,73 @@
         font-size: 1em;    
         margin-right: 100%;
     }
+    .projet h3
+    {
+        font-size: 1.8em;
+    }
+    .projet .grid .item .sous_item h1
+    {
+        font-size: 1.8em;
+    }
+    .projet .grid .item .sous_item p
+    {
+        font-size: 1.1em;
+    }
+    .veille .veille_texte h1
+    {
+        font-size: 1.8em;
+    }
+    .veille .veille_texte h2
+    {
+        font-size: 1.6em;
+    }
+    .veille .veille_texte p
+    {
+        font-size: 1.2em;
+    }
 }
 @media screen and (max-width: 680px) {
-    .hero h1
+    .banniere .hero h1
+    {
+        font-size: 1.2em;
+        font-weight: bolder;
+    } 
+    .hero p
+    {
+        font-size: 1.2em;
+    }
+    .a_propos .text_moi p
     {
         font-size: 1.5em;
-        font-weight: bolder;
-        margin-bottom: 10px;
-    } 
-    .projet .grid
+    }
+    .a_propos .text_moi span
     {
-        grid-template-columns: repeat(2, 1fr);
+        font-size: 1.1em;
+    }
+    .a_propos .text_moi .cv_dl
+    {
+        font-size: 1.5em;
+    }
+    .a_propos .text_moi .cv_page
+    {
+        font-size: 1.1em;
     }
     .experience h1
     {
-        font-size: 2em;
+        font-size: 1.8em;
         font-weight: 700;
     }
-    .experience .date
+    .experience .stage2 h2
     {
-        font-size: 0.8em;
+        font-size: 1.5em;
     }
-    .experience h2
+    .experience .stage1 h2
     {
-        font-size: 1em;
+        font-size: 1.5em;
     }
     .experience .texte
     {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
     .experience .description
     {
@@ -761,205 +965,78 @@
     }
     .formation h1
     {
-        font-size: 2em;
+        font-size: 1.8em;
         font-weight: 700;
-    }
-    .formation .date
-    {
-        font-size: 0.8em;
     }
     .formation h2
     {
-        font-size: 1em;
+        font-size: 1.5em;
     }
     .formation .texte
     {
-        font-size: 0.8em;
-    }
-    .formation .description
-    {
-        font-size: 0.5em;
+        font-size: 0.9em;
     }
         .scroll_top_button
     {
         width: 10vw;
         height: 10vw;
     }
-    .a_propos .text_moi .cv_dl
+    .projet .grid
     {
-        font-size: 1.4em;
+        grid-template-columns: repeat(2, 1fr);
     }
-    .a_propos .text_moi .cv_page
-    {
-        font-size: 1.4em;
-    }
-}
-
-@media screen and (max-width: 1550px) {
-    .a_porpos_image
-    {
-        display: none;
-        width: 60%;
-    }
-    .a_propos .text_moi
-    {
-        position: relative;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
- 
-    }
-    .a_propos .text_moi h1
-    {
-
-        font-size: 3em;
-        margin-bottom: 10px;
-        padding-bottom: 3%;
-    }
-    .a_propos .text_moi p
-    {
-        font-size: 2em;
-
-        margin-bottom: 10px;
-        padding-bottom: 3%;
-    }
-    .a_propos .text_moi span
-    {
-        font-size: 1.6em;
-    }
-    .a_propos .text_moi .cv_page
-    {
-        margin-top: 6%; 
-    }
-    .formation h1
-    {
-        font-size: 3em;
-        font-weight: 700;
-    }
-    .formation .date
+    .projet h3
     {
         font-size: 1.8em;
-    }
-    .formation h2
-    {
-        font-size: 3em;
-    }
-    .formation .texte
-    {
-        font-size: 2em;
-    }
-    .formation .description
-    {
-        font-size: 1em;
-    }
-    .experience h1
-    {
-        font-size: 3em;
         font-weight: 700;
-    }
-    .experience .date
-    {
-        font-size: 1.8em;
-    }
-    .experience h2
-    {
-        font-size: 3em;
-    }
-    .experience .texte
+    }    .veille .veille_texte h1
     {
         font-size: 2em;
     }
-    .experience .description
-    {
-        font-size: 1em;
-    }
-        .nav_bar  a
-    {
-        font-size: 17px;
-    }
-        .a_propos .text_moi .cv_dl
-    {
-        margin-top: 6%;
-    }
-    
-}
-@media screen and (max-width: 460px) {
-    .a_propos .text_moi h1
-    {
-
-        font-size: 3em;
-        margin-bottom: 10px;
-        padding-bottom: 3%;
-    }
-    .a_propos .text_moi p
-    {
-        font-size: 2em;
-
-        margin-bottom: 10px;
-        padding-bottom: 3%;
-    }
-    .a_propos .text_moi span
+    .veille .veille_texte h2
     {
         font-size: 1.5em;
     }
+    .veille .veille_texte p
+    {
+        font-size: 1em;
+        padding-top: 5% ;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .banniere .hero p
+    {
+        font-size: 1em;
+    }
+    .a_propos .text_moi .cv_dl
+    {
+        font-size: 1.3em;
+    }
     .a_propos .text_moi .cv_page
     {
         margin-top: 6%; 
-        font-size: 1.3em;
+        font-size: 1em;
         margin-right: 2%;
     }
     .projet .grid
     {
         grid-template-columns: repeat(1, 1fr);
     }
-    .experience h1
+    .projet .grid .item .sous_item h1
     {
-        font-size: 2.3em;
-        font-weight: 700;
+        font-size: 1.4em;
     }
-    .experience .date
-    {
-        font-size: 1.2em;
-    }
-    .experience h2
-    {
-        font-size: 0.5em;
-    }
-    .experience .texte
+    .projet .grid .item .sous_item p
     {
         font-size: 1em;
     }
-    .experience .description
-    {
-        font-size: 0.6em;
-    }
-    .formation h1
-    {
-        font-size: 2.3em;
-        font-weight: 700;
-    }
-    .formation .date
-    {
-        font-size: 1.2em;
-    }
-    .formation h2
-    {
-        font-size: 0.5em;
-    }
-    .formation .texte
-    {
-        font-size: 1em;
-    }
-    .formation .description
-    {
-        font-size: 0.6em;
-    }
+
+    
 }
 @media screen and (max-width: 300px) {
-    .experience h1
-    {
-        font-size: 1.8em;
-    }
+
     .experience .texte
     {
         font-size: 1.1em;
