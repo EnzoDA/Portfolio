@@ -208,7 +208,7 @@
    
    }
    
-   function onTouchMove( event ) {
+   /*function onTouchMove( event ) {
    
      touchInput = true;
    
@@ -216,7 +216,7 @@
    
      event.preventDefault();
    
-   }
+   }*/
    
    function onMouseLeave() {
    

@@ -210,7 +210,7 @@
           <li><a href="tel:0608172136" target="_blank" class="contact-icon">
             <i class="fas fa-mobile-alt" aria-hidden="true"></i></a>
           </li>
-          <li><a href="enzodasilvaribeiro@gmail.com" target="_blank" class="contact-icon">
+          <li><a href="mailto:enzodasilvaribeiro@gmail.com" target="_blank" class="contact-icon">
             <i class="far fa-envelope" aria-hidden="true"></i></a>
           </li>
           <li><a href="https://www.linkedin.com/in/enzo-da-silva-ribeiro-0794b0232/" target="_blank" class="contact-icon">
@@ -220,17 +220,21 @@
         <hr>
       </div>
       <div class="contact-form-bas">
-        <form>
+        <form id="contact-form" action="envoi-email.php" method="post">
           <div class="form-item">
-            <input type="text" name="sender" required>
+            <input type="text" id="name" name="name" required>
             <label>Name:</label>
           </div>
           <div class="form-item">
-            <input type="text" name="email" required>
+            <input type="text" id="email" name="email" required>
             <label>Email:</label>
           </div>
           <div class="form-item">
-            <textarea class="" name="message" required></textarea>
+            <input type="text" id="subject" name="subject" required>
+            <label>Objet:</label>
+          </div>
+          <div class="form-item">
+            <textarea class="" id="message" name="message"  rows="4" required></textarea>
             <label>Message:</label>
           </div>
           <button type="submit" class="submit-btn">Send</button>  
@@ -258,5 +262,6 @@
 </script>
 <script type="text/javascript" src="js.js"></script>
 <script type="text/javascript" src="dessin.js"></script>
+<script type="text/javascript" src="contact.js"></script>
 </body>
 </html>

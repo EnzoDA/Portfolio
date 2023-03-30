@@ -591,7 +591,7 @@
   
   .contact-liens, .contact-form-bas {
     width: 50%;
-    padding: 8% 5% 10% 5%;
+    padding: 8% 5% 4% 5%;
     border-radius: 0px 10px 10px 0px;
   }
   .contact-boite .contact-form-bas {
@@ -641,10 +641,14 @@
         left: 0;
       }
       .social-media-list li {
-        height: 55px;
-        width: 55px;
-        line-height: 55px;
-        font-size: 2rem;
+        height: 8vh;
+        width: 11vw;
+        line-height: 35px;
+        font-size: 1.8em;
+      }
+      .social-media-list li a
+      {
+        font-size: 0.6em;
       }
       .social-media-list li:after {
         width: 55px;
@@ -652,7 +656,7 @@
         line-height: 55px;
       }
       .contact-boite .contact-liens h2 {
-        font-size: clamp(30px, 12vw, 60px);
+        font-size: 1.8em;
       }
   }
   
@@ -689,7 +693,7 @@
     outline: 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 6%;
     padding: 12px;
     font-size: clamp(15px, 1.5vw, 18px);
   }
@@ -825,6 +829,7 @@
     }
     .experience h1
     {
+        
         font-size: 2em;
         font-weight: 700;
     }
@@ -917,6 +922,10 @@
     {
         color: black;
         font-size: 17px;
+    }    
+    .nav_bar .nav_links .dropmenu .content 
+    {
+        font-size: 8px;
     }
     .nav_links{
         position: absolute;
@@ -928,22 +937,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        backdrop-filter: blur(7px);
+        backdrop-filter: blur(12px);
         margin-right: -100%;
         transition: all 0.5s ease-in-out;
     }
     .nav_links.mobile_menu
     {
-    margin-right: 0;
+        margin-right: 0;
     }
-    .nav_links ul{
+    .nav_bar .nav_links ul{
         display: flex;
         flex-direction: column;
         align-items: center; 
+        margin-bottom: 14%;
     }
     .nav_links ul li
     {
-        padding: 25px 0;
+        padding: 15px 0;
         font-size: 1.5em;
     }
 
@@ -984,6 +994,7 @@
     .experience h1
     {
         font-size: 1.8em;
+        padding-top: 12%;
     }
     .experience .stage1 .date
     {
@@ -1012,6 +1023,7 @@
     .formation h1
     {
         font-size: 1.8em;
+        padding-top: 12%;
     }
     .formation .date
     {
@@ -1037,6 +1049,7 @@
     }
     .projet h3
     {
+        padding-top: 12%;
         font-size: 1.8em;
     }
     .projet .grid .item .sous_item h1
@@ -1050,6 +1063,7 @@
     .veille .veille_texte h1
     {
         font-size: 1.8em;
+        padding-top: 20%;
     }
     .veille .veille_texte h2
     {
@@ -1058,6 +1072,10 @@
     .veille .veille_texte p
     {
         font-size: 1.2em;
+    }
+    #contact
+    {
+        padding-top: 2%;
     }
 }
 @media screen and (max-width: 680px) {
@@ -1090,27 +1108,29 @@
     {
         font-size: 1.8em;
         font-weight: 700;
+        padding-top: 15%;
     }
     .experience .stage2 h2
     {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
     .experience .stage1 h2
     {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
     .experience .texte
     {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
     .experience .description
     {
-        font-size: 0.5em;
+        font-size: 0.55em;
     }
     .formation h1
     {
         font-size: 1.8em;
         font-weight: 700;
+        padding-top: 15%;
     }
     .formation h2
     {
@@ -1118,7 +1138,7 @@
     }
     .formation .texte
     {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
         .scroll_top_button
     {
@@ -1133,9 +1153,12 @@
     {
         font-size: 1.8em;
         font-weight: 700;
-    }    .veille .veille_texte h1
+        padding-top: 15%;
+    }    
+    .veille .veille_texte h1
     {
         font-size: 2em;
+        padding-top: 23%;
     }
     .veille .veille_texte h2
     {
@@ -1148,11 +1171,14 @@
     }
 }
 
-
 @media screen and (max-width: 460px) {
     .banniere .hero p
     {
         font-size: 1em;
+    }
+    .nav_bar .nav_links ul
+    {
+        margin-bottom: 20%;
     }
     .a_propos .text_moi .cv_dl
     {
