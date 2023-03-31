@@ -436,6 +436,11 @@
     color: white;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 15px 16px 0px;
 }
+.projet .grid .item a
+{
+    text-decoration: none;
+    color: #333333;
+}
 .projet .grid .item .img_item
 {
     padding: 1%;
@@ -845,60 +850,64 @@
     }
     .experience .sacs img
     {
-        width: 4%;
+        width: 10%;
     }
     .experience h1
     {
         
-        font-size: 2em;
+        font-size: 2.3em;
         font-weight: 700;
     }
     .experience .stage2 .date
     {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
     .experience .stage1 .date
     {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
     .experience .stage2 h2
     {
-        font-size: 1.8em;
+        font-size: 1.9em;
     }
     .experience .stage1 h2
     {
-        font-size: 1.8em;
+        font-size: 1.9em;
     }
     .experience .texte
     {
-        font-size: 1.3em;
+        font-size: 1.4em;
         padding-left: 2%;
         padding-right: 2%;
     }
     .experience .description
     {
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
     .formation h1
     {
-        font-size: 2em;
+        font-size: 2.3em;
         font-weight: 700;
     }
     .formation .date
     {
-        font-size: 1.3em;
+        font-size: 1.4em;
+    }
+    .formation .formation1 .sacs img
+    {
+        width: 10%;
     }
     .formation .formation1 h2
     {
-        font-size: 1.8em;
+        font-size: 1.9em;
     }
     .formation .texte
     {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
     .projet h3
     {
-        font-size: 2em;
+        font-size: 2.3em;
     }
     .projet .grid .item .sous_item h1
     {
@@ -906,7 +915,7 @@
     }
     .projet .grid .item .sous_item p
     {
-        font-size: 1.25em;
+        font-size: 1.2em;
     }
     .veille .veille_texte h1
     {
@@ -1009,7 +1018,7 @@
     }
     .experience .sacs img
     {
-        width: 8%;
+        width: 11%;
     }
     .experience h1
     {
@@ -1057,13 +1066,12 @@
     {
         font-size: 1.3em;
     }
-    .formation .sacs img
+    .formation .formation1 .sacs img
     {
-        width: 8%;
+        width: 11%;
     }
-        .contact .contact_block form label
+    .contact .contact_block form label
     {
-
         font-size: 1em;    
         margin-right: 100%;
     }
@@ -1322,5 +1330,3 @@
         font-size: 0.8em;
     }
 }
-
-
