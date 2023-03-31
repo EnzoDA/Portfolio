@@ -779,6 +779,7 @@
     padding: 3%;
     color: #f9f9f9;
     font-size: 1.2em;
+    text-decoration: none;
 }
 .footer .footer-text .footer_email
 {
@@ -786,6 +787,8 @@
 }
 .footer .footer-text .footer_email p
 {
+    text-decoration: none;
+    color: #f9f9f9;
     margin-top: 5%;
 }
 
@@ -928,6 +931,10 @@
     .veille .veille_texte p
     {
         font-size: 1.3em;
+    }
+    .social-media-list li a 
+    {
+      font-size: 2em;
     }
 }
 @media screen and (max-width: 900px) { 
