@@ -287,18 +287,18 @@
     padding-bottom: 3%;
     margin-top: 3%;
     color: rgb(185, 74, 80);
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 780;
 }
 .experience .sacs img
 {
-    width: 11%;
+    width: 2.5%;
     height: auto;
-    padding: 3%;
+    margin-bottom: 1%;
 }
 .experience .date
 {
-    font-size: 2.3em;
+    font-size: 1.25em;
 }
 .experience .date i
 {
@@ -306,23 +306,23 @@
 }
 .experience .stage1 h2
 {
-    padding: 1%;
+    padding: 0.5%;
     font-weight: 700;
-    font-size: 3em;
+    font-size: 1.9em;
 }
 .experience .stage2 h2
 {
     color: rgb(164,78,82);
-    padding: 1%;
+    padding: 0.5%;
     font-weight: 700;
-    font-size: 3em;
+    font-size: 1.9em;
 }
 .experience .texte
 {
-    font-size: 2.2em;
+    font-size: 1.35em;
     font-weight: 400;
     margin-bottom: 1%;
-    padding: 1%;
+    padding: 0.5%;
 }
 .experience .description
 {
@@ -333,21 +333,21 @@
     justify-items: center;
     margin-left: 10%;
     padding-right:1%;
-    padding-bottom: 4%;
+    padding-bottom: 5%;
 }
 .experience .stage1 .description p
 {
     text-align:start;
     margin-left: 40%;
-    font-size: 1.8em;
-    margin-top: 3%;
+    font-size: 1.2em;
+    margin-top: 1%;
 }
 .experience .stage2 .description p
 {
     text-align:start;
     margin-left: 40%;
-    font-size: 1.8em;
-    margin-top: 3%;
+    font-size: 1.2em;
+    margin-top: 1%;
 }
 .experience .description p i
 {
@@ -396,33 +396,29 @@
 }
 .formation .encadrement .sacs img
 {
-    width: 12%;
+    width: 4.5%;
     height: auto;
-    padding: 3%;
-
+    margin: 1%;
 }
 .formation .date
 {
-    font-size: 1.75em;
-
+    font-size: 1.25em;
 }
 .formation .date i
 {
     margin-right: 1%;
-
 }
 .formation .formation1 h2
 {
     padding: 1%;
     font-weight: 700;
-    font-size: 2.3em;
+    font-size: 1.9em;
     
 }
 .formation .texte
 {
-    font-size: 1.7em;
+    font-size: 1.3em;
     font-weight: 400;
-
     padding-bottom: 4%;
     width: 80%;
     margin-left: 10%;
@@ -442,7 +438,7 @@
 {
     padding-top: 6%;
     color: rgb(185, 74, 80);
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 780;
 }
 
@@ -489,7 +485,7 @@
 }
 .projet .grid .item .img_item img
 {
-    width: 8vw;
+    width: 7vw;
     height: auto;
     border-radius: 4px;
 }
@@ -500,7 +496,7 @@
 }
 .projet .grid .item .sous_item h1
 {
-    font-size: 2.4em;
+    font-size: 2.2em;
     font-weight: 725;
     text-shadow: 1px 1px 0px rgb(0, 0, 0) ;
     padding-top: 4%;
@@ -509,7 +505,7 @@
 .projet .grid .item .sous_item p
 {
     color: #333333;
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: 500;
     padding-top:6%;
 }
@@ -894,64 +890,70 @@
     }
     .experience .sacs img
     {
-        width: 10%;
+        width: 3%;
     }
     .experience h1
     {
         padding-top: 7%;
-        font-size: 2.3em;
+        font-size: 2.4em;
         font-weight: 700;
     }
     .experience .stage2 .date
     {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     .experience .stage1 .date
     {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     .experience .stage2 h2
     {
-        font-size: 1.9em;
+        font-size: 1.65em;
     }
     .experience .stage1 h2
     {
-        font-size: 1.9em;
+        font-size: 1.65em;
     }
     .experience .texte
     {
-        font-size: 1.4em;
+        font-size: 1.3em;
         padding-left: 2%;
         padding-right: 2%;
     }
     .experience .description
     {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
     .formation h1
     {
-        font-size: 2.3em;
+        font-size: 2.4em;
         font-weight: 700;
     }
     .formation .date
     {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     .formation .formation1 .sacs img
     {
-        width: 12%;
+        width:5%;
     }
     .formation .formation1 h2
     {
-        font-size: 1.9em;
+        font-size: 1.65em;
     }
     .formation .texte
     {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
     .projet h3
     {
         font-size: 2.3em;
+    }
+    .projet .grid .item .img_item img
+    {
+        width: 8vw;
+        height: auto;
+        border-radius: 4px;
     }
     .projet .grid .item .sous_item h1
     {
@@ -959,7 +961,7 @@
     }
     .projet .grid .item .sous_item p
     {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     .veille .veille_texte h1
     {
@@ -1066,57 +1068,62 @@
     }
     .experience .sacs img
     {
-        width: 11%;
+        width: 4%;
     }
     .experience h1
     {
-        font-size: 1.8em;
+        font-size: 2em;
         padding-top: 12%;
     }
     .experience .stage1 .date
     {
-        font-size: 1.2em;
+        font-size: 1.05em;
     }
     .experience .stage2 .date
     {
-        font-size: 1.2em;
+        font-size: 1.05em;
     }
     .experience .stage2 h2
     {
-        font-size: 1.8em;
+        font-size: 1.45em;
     }
     .experience .stage1 h2
     {
-        font-size: 1.8em;
+        font-size: 1.45em;
     }
     .experience .texte
     {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     .experience .description 
     {
-        font-size: 0.6em;
+        font-size: 0.7em;
+    }
+    .experience .stage2 .description p i
+    {
+        font-size: 1px;
     }
     .formation h1
     {
-        font-size: 1.8em;
+        font-size: 2em;
         padding-top: 12%;
+        margin-bottom: 2%
     }
     .formation .date
     {
-        font-size: 1.2em;
+        font-size: 1.05em;
     }
     .formation h2
     {
-        font-size: 1.8em;
+        font-size: 1.45em;
     }
     .formation .texte
     {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     .formation .formation1 .sacs img
     {
-        width: 13%;
+        width: 5%;
     }
     .contact .contact_block form label
     {
@@ -1128,13 +1135,17 @@
         padding-top: 12%;
         font-size: 1.8em;
     }
+    .projet .grid .item .img_item img
+    {
+        width: 13vw;
+    }
     .projet .grid .item .sous_item h1
     {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
     .projet .grid .item .sous_item p
     {
-        font-size: 1.1em;
+        font-size: 1.05em;
     }
     .veille .veille_texte h1
     {
@@ -1223,19 +1234,19 @@
     }
     .experience .stage2 h2
     {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
     .experience .stage1 h2
     {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
     .experience .texte
     {
-        font-size: 1.1em;
+        font-size: 1em;
     }
     .experience .description
     {
-        font-size: 0.55em;
+        font-size: 0.7em;
     }
     .formation h1
     {
@@ -1265,7 +1276,11 @@
         font-size: 1.8em;
         font-weight: 700;
         padding-top: 15%;
-    }    
+    }  
+    .projet .grid .item .img_item img
+    {
+        width: 15vw;
+    }
     .veille .veille_texte h1
     {
         font-size: 2em;
@@ -1277,7 +1292,7 @@
     }
     .veille .veille_texte p
     {
-        font-size: 1em;
+        font-size: 0.8em;
         padding-top: 5% ;
     }
 }
@@ -1301,13 +1316,19 @@
         font-size: 1em;
         margin-right: 2%;
     }
-    .formation .encadrement .formation1 .sacs img
-    {
-        width: 18%;
-    }
     .experience .sacs img
     {
-        width: 13%;
+        width: 6%;
+        margin: 2%;
+    }
+    .formation .encadrement .formation1 .sacs img
+    {
+        width: 9%;
+        margin: 2%;
+    }
+    .projet .grid .item .img_item img
+    {
+        width: 20vw;
     }
     .projet .grid
     {
@@ -1355,13 +1376,13 @@
     {
     font-size: 1.8em;
     }
-    .formation .encadrement .formation1 .sacs img
-    {
-        width: 18%;
-    }
     .experience .sacs img
     {
-        width: 15%;
+        width: 8%;
+    }
+    .formation .encadrement .formation1 .sacs img
+    {
+        width: 11%;
     }
   }
   
