@@ -69,7 +69,7 @@ var TxtRotate = function(el, toRotate, period) {
     });
   };
 
-<<<<<<< Updated upstream
+
   document.querySelector('#contact-form').addEventListener('submit', (e) => {
     e.preventDefault();
     e.target.elements.name.value = '';
@@ -102,7 +102,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-=======
 
   const navbar = document.querySelector('nav');
   const links = document.querySelectorAll('nav .nav_links ul li a,nav .nav_links ul .content a');
@@ -129,4 +128,3 @@ window.onclick = function(event) {
     }})
 
   
->>>>>>> Stashed changes
