@@ -1002,7 +1002,7 @@
     height: auto;
     display: column;
     justify-content: center;
-    animation-duration:0.5s;
+
   }
   .modal .modal_content p 
   {
@@ -1751,6 +1751,32 @@
     to 
     {
         margin-top: 0%;
+    }
+}
+@keyframes slidein-bas
+{
+    from 
+    {
+      margin-top: -300%;
+     
+    }
+  
+    to 
+    {
+        margin-top: 0%;
+    }
+}
+@keyframes slidein-haut
+{
+    from 
+    {
+      margin-top: 0%;
+     
+    }
+  
+    to 
+    {
+        margin-top: 300%;
     }
 }
 @keyframes smooth 
