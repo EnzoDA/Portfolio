@@ -20,7 +20,7 @@
              <li><a href="#a_propos">Qui suis-je?</a></li>
              <li><a href="#experience">Expérience</a></li>
              <div class="dropmenu">
-             <li><a>Autre</a></li>
+             <li>Autre</li>
             <div class="content">
                 <a href="#formation">Diplôme</a>
                 <a href="#projet">Projet</a>
@@ -356,6 +356,12 @@
     menuHamburger.addEventListener('click',()=>{
     navLinks.classList.toggle('mobile_menu')
     })
+    const navLinksItems = navLinks.querySelectorAll('a');
+navLinksItems.forEach(item => {
+  item.addEventListener('click', () => {
+    navLinks.classList.remove('mobile_menu');
+  });
+});
 
 </script>
 <script type="text/javascript" src="js.js"></script>
