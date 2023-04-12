@@ -28,53 +28,6 @@
 	background-color: #555;
 }
 
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 22; 
-    padding-top: 100px; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
-
-  }
-  
-  .modal_content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    color: black;
-    border: 1px solid #888;
-    width: 90%;
-    height: auto;
-    display: column;
-    justify-content: center;
-  }
-  .modal .modal_content p
-  {
-
-    color: black;
-
-  }
-  
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
 /*NAV_BAR*/
 
 
@@ -383,6 +336,16 @@
 .card:hover:nth-child(5)
 {
     background-color: #7A86B8;
+}
+.card:hover:nth-child(6)
+{
+    background-color: #F9322C;
+    transition: none;
+    font-size: 0.85em;
+}
+.card:nth-child(6)
+{
+    transition: none;
 }
 .card:hover .card-details p
 {
@@ -992,13 +955,88 @@
 {
     margin-top: 5%;
 }
-.footer .footer-text .footer_email p
+.footer .footer-text .cotent_texte .footer_email p
 {
     text-decoration: none;
-    color: #f9f9f9;
+
     margin-top: 5%;
 }
 
+/*MODAL*/
+
+
+#btn_ml
+{
+    border: none;
+    background-color: transparent;
+    color:#f9f9f9 ;
+    font-size: 0.6em;
+    margin-top: 5%;
+    text-decoration: underline;
+}
+.modal 
+{
+    display: none; 
+    position: fixed; 
+    z-index: 22; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    animation-name: slidein-bas;
+    animation-duration: 0.8s;
+  }
+  
+  .modal_content 
+  {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    color: black;
+    border: 1px solid #888;
+    width: 90%;
+    height: auto;
+    display: column;
+    justify-content: center;
+    animation-duration:0.5s;
+  }
+  .modal .modal_content p 
+  {
+    color: black;
+    padding-top: 2%;
+  }
+  .modal .modal_content h1
+  {
+    color: black;
+    padding-top: 2%;
+  }
+  .modal .modal_content p a
+  {
+    text-decoration: underline;
+  }
+
+  
+  .close 
+  {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .close:hover, .close:focus 
+  {
+    color: rgb(185, 74, 80);
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(2);
+    transition: all 0.3s;
+  }
 
 
 
@@ -1700,6 +1738,19 @@
     to 
     {
       opacity: 0;
+    }
+}
+@keyframes slidein-bas
+{
+    from 
+    {
+      margin-top: -300%;
+     
+    }
+  
+    to 
+    {
+        margin-top: 0%;
     }
 }
 @keyframes smooth 
