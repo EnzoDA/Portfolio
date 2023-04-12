@@ -68,8 +68,8 @@ var TxtRotate = function(el, toRotate, period) {
       top: 0, behavior:"smooth"
     });
   };
-  document.addEventListener("scroll", onScroll);
 
+<<<<<<< Updated upstream
   document.querySelector('#contact-form').addEventListener('submit', (e) => {
     e.preventDefault();
     e.target.elements.name.value = '';
@@ -102,3 +102,31 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+=======
+
+  const navbar = document.querySelector('nav');
+  const links = document.querySelectorAll('nav .nav_links ul li a,nav .nav_links ul .content a');
+  
+  links.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const href = link.getAttribute('href');
+      const target = document.querySelector(href);
+      const topOffset = target.offsetTop;
+      
+      window.scrollTo({
+        top: topOffset,
+        behavior: 'smooth'
+      });
+    });
+  });
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >20) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }})
+
+  
+>>>>>>> Stashed changes
