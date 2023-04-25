@@ -1,41 +1,38 @@
 <?php
-require 'vendor/autoload.php'; // Inclure le fichier autoload.php généré par Composer
+require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require 'vendor/phpmailer/phpmailer/src/SMTP.php';
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-// Vérifier si le formulaire a été soumis
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $to = "enzodasilvaribeiro@gmail.com";
+
   $email = $_POST['email'];
+  $to = "enzo@enzodasilvaribeiro.online";
   $subject = $_POST['subject'];
   $message = $_POST['message'];
 
-  // Créer une nouvelle instance de PHPMailer
- 
+  $mail = new PHPMailer\PHPMailer\PHPMailer();
+  $mail->isSMTP();
+  $mail->Host = 'smtp.hostinger.com'; // Remplacez par votre serveur SMTP
+  $mail->SMTPAuth = true;
+  $mail->Username = 'enzo@enzodasilvaribeiro.online'; // Remplacez par votre nom d'utilisateur SMTP
+  $mail->Password = 'jsp encore!'; // Remplacez par votre mot de passe SMTP
+  $mail->SMTPSecure = 'ssl';
+  $mail->Port = 465;
 
-  try {
-    // Configuration des paramètres de messagerie
-    $mail = new PHPMailer\PHPMailer\PHPMailer();
-    $mail->isSMTP();
-    $mail->Host = 'smtp.hostinger.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'enzo@enzodasilvaribeiro.online';
-    $mail->Password = 'Barcelone2015!';
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 465;
+  $mail->setFrom($email);
+  $mail->addAddress($to);
+  $mail->Subject = $subject;
+  $mail->Body = $message;
 
-    // Composer le message
-    $mail->setFrom($email);
-    $mail->addAddress($to);
-    $mail->Subject = $subject;
-    $mail->Body = $message;
-
-    // Envoyer l'e-mail
-    $mail->send();
-    echo 'E-mail envoyé avec succès !';
-  } catch (Exception $e) {
-    echo 'Erreur lors de l\'envoi de l\'e-mail : ', $mail->ErrorInfo;
+  // Envoyer l'email
+if ($mail->send()) 
+  {
+    header("Location: index.php?success=true");
+    exit();
+  } 
+else 
+  {
+    $errorMessage = error_get_last()['message'];
+    header("Location: index.php?error=mailsend&message=".$errorMessage);
+    exit();
   }
 }
-?>
