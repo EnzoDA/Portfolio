@@ -4,7 +4,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    font-family: 'Lato';
+    font-family: 'Poppins';
     box-sizing: border-box;
     
 }
@@ -341,11 +341,12 @@
 {
     background-color: #F9322C;
     transition: none;
-    font-size: 0.85em;
+    font-size: 0.8em;
 }
-.card:nth-child(6)
+.card:hover:nth-child(7)
 {
-    transition: none;
+    background-color:#F7DF1E;
+    transition: none; 
 }
 .card:hover .card-details p
 {
@@ -1613,6 +1614,10 @@
     .nav_bar .nav_links ul
     {
         margin-bottom: 20%;
+    }
+    .card:hover:nth-child(6)
+    {
+        font-size: 0.5em;
     }
     .a_propos .text_moi .cv_dl
     {
