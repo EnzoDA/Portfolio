@@ -1,12 +1,6 @@
+/local/
 /vendor/
-
 *.log
 *.tmp
 *.bak
 
-composer.json
-composer.lock
-contact.js
-envoi-email.php
-tableau.xlsx
-Veille.pdf
