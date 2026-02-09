@@ -223,27 +223,17 @@
 }
 .a_propos .text_moi
 { 
-    position: absolute;
+ 
     margin-left: 14%;
-    width: 30%;
-    margin-top: 4%;
+    width: 80%;
+
     background-color: white;
     z-index: 2;
     padding: 50px;
     padding-bottom: 3%;
 }
-.a_propos .a_porpos_image
-{
-    margin-left: 45%;
-    z-index: 1;
-    right: 0;
-    width: 50%;
-}
-.a_propos img
-{
-    width: 75%;
-    height: 100%;
-}
+
+
 .a_propos .text_moi h1
 {
     color: rgb(164,78,82);
@@ -266,10 +256,12 @@
 }
 .all_card
 {
-    width: 100%;
-    height: auto;
+
     display: flex;
-    margin-top: 5%
+    margin-top: 5%;
+    flex-wrap: wrap; /* <- permet aux cartes de revenir à la ligne */
+    gap: 5px;  
+    
 }
 .all_card .card:nth-child(1)
 {
@@ -337,16 +329,41 @@
 {
     background-color: #7A86B8;
 }
+
 .card:hover:nth-child(6)
-{
-    background-color: #F9322C;
-    transition: none;
-    font-size: 0.8em;
-}
-.card:hover:nth-child(7)
 {
     background-color:#F7DF1E;
     transition: none; 
+}
+.card:hover:nth-child(7)
+{
+    background-color:#366F9E;
+    transition: none; 
+    font-size: 0.8em;
+}
+.card:hover:nth-child(8)
+{
+    background-color: #F9322C;
+    transition: none;
+    font-size: 0.7em;
+}
+.card:hover:nth-child(9)
+{
+    background-color: #130654;
+    transition: none;
+    font-size: 0.8em;
+}
+.card:hover:nth-child(10)
+{
+    background-color: #4caacf;
+    transition: none;
+    font-size: 0.9em;
+}
+.card:hover:nth-child(11)
+{
+    background-color: black;
+    transition: none;
+    font-size: 0.5em;
 }
 .card:hover .card-details p
 {
@@ -355,14 +372,16 @@
     letter-spacing: .1em;
     color: #f9f9f9;
 }
-.a_propos .text_moi .cv
+.cv
 {
     display: flex;
     border-radius: 15px;
-    margin-top: 12%;
+    margin-top: 8%;
     gap: 2%;
+    width: 100%;
+    justify-content: center;
 }
-.a_propos .text_moi .cv_page
+.cv_page
 {
     display: flex;
     font-size: 1.6em;
@@ -373,22 +392,12 @@
     border-radius: 5px;
     text-align: center;
 }
-.a_propos .text_moi .cv_page:hover
+.cv_page:hover
 {
-    transition: all 0.3s ease-in;
+    transition: all 0.2s ease-in;
     background-color: rgb(164,78,82); 
     color: white;
     box-shadow: 2px 2px 0px black;
-}
-.a_propos .text_moi .cv_dl
-{
-    display: flex;
-    font-size: 1.6em;
-    color: rgb(164,78,82);
-    padding: 2px 2px;
-    border: 2px solid rgb(164,78,82);
-    border-radius: 15px;
-    place-items: center;
 }
 
 
@@ -633,6 +642,7 @@
     color: #f9fbfc;
     transition: all 0.3s ease-in-out;
 }
+
 
 
 /*VEILLE TECHNO*/
