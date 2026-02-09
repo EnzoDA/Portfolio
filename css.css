@@ -260,7 +260,8 @@
     display: flex;
     margin-top: 5%;
     flex-wrap: wrap; /* <- permet aux cartes de revenir à la ligne */
-    gap: 5px;  
+    gap: 5px;
+    justify-content: center;  
     
 }
 .all_card .card:nth-child(1)
